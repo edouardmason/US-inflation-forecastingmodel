@@ -1,1 +1,3 @@
-# US-inflation-forecastingmodel
+# US-inflation-forecasting-model
+
+This project consists of a forecasting pipeline for US monthly inflation using FRED macroeconomic data. I used lagged and seasonal features, implementing OLS and Ridge regression (with cross-validated alpha hyperparameter), and benchmarked them against a naïve baseline. I evaluated model performance via chronological holdout and rolling-origin backtests with Ridge outperforming OLS in all scenarios and methods used. However, it is interesting to note that Ridge prediction performance dropped between chronological holdout and rolling backtest while OLS peformance improved. 
